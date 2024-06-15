@@ -1,3 +1,9 @@
+BACKEND
+--------
+
+Backand need to run on https://localhost:5000
+In VS2022 select Kestrel [https]
+
 MEATALAMA
 
 First, install the Metalama Command Line Tools as detailed in Installing the Metalama Command Line Tool.
@@ -21,3 +27,14 @@ To activate Metalama Free, a free but limited edition of Metalama, run: metalama
 DB
 At first start the web application will install a DB using MS SQL.
 Default connection string: Server=(LocalDB)\\MSSQLLocalDB;Database=DevoraLimeTestAppDB;Trusted_Connection=True;MultipleActiveResultSets=true;
+
+
+FRONTEND
+--------------
+to install PNPM run
+npm install -g pnpm or
+winget install -e --id pnpm.pnpm
+
+if we got an error that says: pnpm.ps1 cannot be loaded => run Set-ExecutionPolicy Unrestricted
+
+pnpm dev

@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution.Services", "Soluti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution.Validators", "Solution.Validators\Solution.Validators.csproj", "{C33BDE35-DB98-4F4A-B8A4-4A1F2A37FB2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution.Core", "Solution.Core\Solution.Core.csproj", "{03CC62ED-B347-4475-8560-86C736AFFE49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution.Core", "Solution.Core\Solution.Core.csproj", "{03CC62ED-B347-4475-8560-86C736AFFE49}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution.Common", "Solution.Common\Solution.Common.csproj", "{4F2A1B6C-45FA-4546-B239-B364D15994CE}"
 EndProject
