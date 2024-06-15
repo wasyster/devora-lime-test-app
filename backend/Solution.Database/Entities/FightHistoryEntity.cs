@@ -1,5 +1,6 @@
 ﻿namespace Solution.Database.Entities;
 
+[Table("FightHistory")]
 public class FightHistoryEntity
 {
     [Key]

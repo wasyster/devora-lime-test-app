@@ -62,7 +62,7 @@ namespace Solution.Database.Migrations
 
                     b.HasIndex("ArenaId");
 
-                    b.ToTable("FightHistories");
+                    b.ToTable("FightHistory");
                 });
 
             modelBuilder.Entity("Solution.Database.Entities.HeroEntity", b =>

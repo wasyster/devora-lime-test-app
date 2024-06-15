@@ -20,12 +20,15 @@ public class HeroService(HttpClient httpClient, ApplicationDbContext dbContext) 
 
             paramsData.NumberOfHeros--;
 
-            //this is just to be more random heroes
+            //this is just to get more random heroes
+            //if we use this aproach in the real life, then the request will time out
+            //for that then we need to use some kind of background service
             //but if I had more time this function shuld be some kind of background process
             await Task.Delay(100);
         }
 
-        await dbContext.Heroes.BulkInsertAsync(heroes);
+        //bulk insert would be nicer, but it throws me an error in test, I requires time to fix
+        await dbContext.Heroes.AddRangeAsync(heroes);
         await dbContext.SaveChangesAsync();
 
         return new AddHeroesToNewArenaResponse

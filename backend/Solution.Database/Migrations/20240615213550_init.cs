@@ -24,7 +24,7 @@ namespace Solution.Database.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "FightHistories",
+                name: "FightHistory",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -34,9 +34,9 @@ namespace Solution.Database.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FightHistories", x => x.Id);
+                    table.PrimaryKey("PK_FightHistory", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_FightHistories_Arena_ArenaId",
+                        name: "FK_FightHistory_Arena_ArenaId",
                         column: x => x.ArenaId,
                         principalTable: "Arena",
                         principalColumn: "Id",
@@ -67,8 +67,8 @@ namespace Solution.Database.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_FightHistories_ArenaId",
-                table: "FightHistories",
+                name: "IX_FightHistory_ArenaId",
+                table: "FightHistory",
                 column: "ArenaId");
 
             migrationBuilder.CreateIndex(
@@ -81,7 +81,7 @@ namespace Solution.Database.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "FightHistories");
+                name: "FightHistory");
 
             migrationBuilder.DropTable(
                 name: "Hero");

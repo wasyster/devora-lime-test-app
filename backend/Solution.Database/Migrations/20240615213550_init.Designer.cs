@@ -11,7 +11,7 @@ using Solution.Database;
 namespace Solution.Database.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240614230738_init")]
+    [Migration("20240615213550_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -65,7 +65,7 @@ namespace Solution.Database.Migrations
 
                     b.HasIndex("ArenaId");
 
-                    b.ToTable("FightHistories");
+                    b.ToTable("FightHistory");
                 });
 
             modelBuilder.Entity("Solution.Database.Entities.HeroEntity", b =>

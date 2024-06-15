@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution.Core", "Solution.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution.Common", "Solution.Common\Solution.Common.csproj", "{4F2A1B6C-45FA-4546-B239-B364D15994CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution.Tests", "Solution.Tests\Solution.Tests.csproj", "{A5A280C8-337E-4FEA-A6A7-A2C6DB15820F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +68,12 @@ Global
 		{4F2A1B6C-45FA-4546-B239-B364D15994CE}.LamaDebug|Any CPU.Build.0 = LamaDebug|Any CPU
 		{4F2A1B6C-45FA-4546-B239-B364D15994CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F2A1B6C-45FA-4546-B239-B364D15994CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A280C8-337E-4FEA-A6A7-A2C6DB15820F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A280C8-337E-4FEA-A6A7-A2C6DB15820F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A280C8-337E-4FEA-A6A7-A2C6DB15820F}.LamaDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A280C8-337E-4FEA-A6A7-A2C6DB15820F}.LamaDebug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A280C8-337E-4FEA-A6A7-A2C6DB15820F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A280C8-337E-4FEA-A6A7-A2C6DB15820F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
