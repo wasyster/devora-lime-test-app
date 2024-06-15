@@ -1,0 +1,28 @@
+.arena-list-header {
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 10px;
+
+  .el-col {
+    text-align: center;
+  }
+}
+
+.arena-list-row {
+  margin: 10px 0px;
+  flex-direction: column !important;
+
+  .el-col {
+    text-align: center;
+  }
+}
+
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.el-row {
+
+}

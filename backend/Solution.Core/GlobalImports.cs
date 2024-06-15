@@ -1,0 +1,9 @@
+﻿global using Solution.Core.Interfaces;
+global using System.Net;
+global using System.Text.Json;
+global using System.Text.Json.Serialization;
+global using Solution.Common.Enums;
+global using Solution.Database.Entities;
+global using Solution.Core.Models.Response;
+global using Solution.Core.Models.Request;
+global using Solution.Core.Models.View;

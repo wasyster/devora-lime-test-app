@@ -1,0 +1,23 @@
+MEATALAMA
+
+First, install the Metalama Command Line Tools as detailed in Installing the Metalama Command Line Tool.
+The Metalama Command Line Tool provides the following features:
+
+Installing a license or switching to Metalama Free.
+Configuring various settings.
+Terminating Metalama processes.
+Cleaning up Metalama temporary files.
+Inspecting and summarizing license usage limits.
+To install the Metalama Command Line Tool, follow these steps:
+
+While Metalama is in preview, check the latest version number of the Metalama.Tool package on NuGet.
+Run the following command at the command prompt:
+
+dotnet tool install -g metalama.tool
+The Metalama Command Line Tool is now accessible through the metalama command.
+
+To activate Metalama Free, a free but limited edition of Metalama, run: metalama license free from console.
+
+DB
+At first start the web application will install a DB using MS SQL.
+Default connection string: Server=(LocalDB)\\MSSQLLocalDB;Database=DevoraLimeTestAppDB;Trusted_Connection=True;MultipleActiveResultSets=true;
