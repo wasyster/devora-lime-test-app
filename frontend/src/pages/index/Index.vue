@@ -1,6 +1,6 @@
 <template>
   <div style="height: 100%;">
-    <h1 style="text-align: center; margin-bottom: 50px;">Devora Lime Arena</h1>
+    <h1 style="text-align: right; margin-bottom: 50px;">Devora Lime Arena</h1>
     <el-row justify="end">
       <el-col :span="2">
         <el-button type="primary" @click="state.dialogVisible = true">Add new</el-button>
@@ -17,7 +17,9 @@
         <el-col :span="1">{{ data.id }}</el-col>
         <el-col :span="9">{{ data.name }}</el-col>
         <el-col :span="4">{{ data.numberOfHeroes }}</el-col>
-        <el-col :span="5">{{ data.winner ? data.winner : 'Waiting for tournament start' }}</el-col>
+        <el-col :span="5">
+          {{ data.winner ? data.winner : 'Waiting for tournament start'}}
+        </el-col>
         <el-col :span="5" v-if="data.logs.length === 0">
           <el-button @click="onFight(data.id)">FIGHT</el-button>
         </el-col>
@@ -69,11 +71,11 @@ import { httpClient } from '../../infrastructure/httpClient';
 const router = useRouter();
 const state = reactive({});
 const fightLogs = reactive({});
-const numberOfHeros = ref(undefined)
+let numberOfHeros = ref(1);
 
 const onAddNewArena = async () => {
   const body = {
-    numberOfHeros: numberOfHeros?.value ?? 0
+    numberOfHeros: numberOfHeros?.value ?? 1
   }
   const response = await httpClient.postAsync('api/hero/add', body, false, true);
 
@@ -86,6 +88,7 @@ const onAddNewArena = async () => {
     });
 
     state.dialogVisible = !state.dialogVisible;
+    numberOfHeros = ref(1);
     await loadData();
   }
   else {

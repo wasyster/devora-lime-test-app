@@ -1,3 +1,7 @@
+.el-main {
+  overflow: hidden !important;
+}
+
 .arena-list-header {
   font-weight: 900;
   font-size: 20px;
@@ -25,4 +29,17 @@
 
 .el-row {
   margin-bottom: 10px;
+
+  .el-col {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.el-col {
+  justify-content: center;
+}
+
+.el-collapse {
+  border-bottom: blue solid 3px !important;
 }
