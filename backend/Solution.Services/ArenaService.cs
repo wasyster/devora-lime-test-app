@@ -35,6 +35,13 @@ public class ArenaService(ApplicationDbContext dbContext) : IArenaService
     {
         var round = 1;
 
+        var arena = await dbContext.Arenas.FirstOrDefaultAsync(x => x.Id == arenaId);
+
+        if(arena is null)
+        {
+            throw new Exception($"Arena withe the provided id of {arenaId} not exists");
+        }
+
         var heros = await dbContext.Heroes.Where(x => x.ArenaId == arenaId)
                                           .Select(x => HeroFactory.Create(x.Type))
                                           .ToListAsync();

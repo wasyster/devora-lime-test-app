@@ -8,4 +8,4 @@ global using Solution.Database.Entities;
 global using Solution.Core.Models.Request;
 global using Microsoft.EntityFrameworkCore;
 global using Solution.Services.Factories;
-global using System.Text;
+global using Solution.Core.Models.View.Heroes;

@@ -6,6 +6,7 @@ public static class HeroFactory
     {
         HeroType.Archer => new Archer(),
         HeroType.SwordsMan => new SwordsMan(),
-        HeroType.Cavalier => new Cavalier()
+        HeroType.Cavalier => new Cavalier(),
+        _ => throw new NotImplementedException()
     };
 }

@@ -82,3 +82,4 @@ node_modules
 *.bin
 backend/.vs/RunME/v17/HierarchyCache.v1.txt
 *.v1
+*.testlog

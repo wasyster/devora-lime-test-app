@@ -1,8 +1,8 @@
-﻿namespace Solution.Core.Models.View;
+﻿namespace Solution.Core.Models.View.Heroes;
 
-public class Cavalier: Hero
+public class SwordsMan : Hero
 {
-    public Cavalier() : base(HeroType.Cavalier, 150)
+    public SwordsMan() : base(HeroType.SwordsMan, 120)
     {
     }
 
@@ -10,18 +10,21 @@ public class Cavalier: Hero
     {
         if (enemy is Cavalier cavalier)
         {
-            cavalier.IsDead = true;
-            cavalier.Health = 0;
+            return;
         }
         else if (enemy is SwordsMan swordsMan)
         {
-            this.IsDead = true;
-            this.Health = 0;
+            swordsMan.IsDead = true;
+            swordsMan.Health = 0;
+
+            this.IsWinner = true;
         }
         else if (enemy is Archer archer)
         {
             archer.IsDead = true;
             archer.Health = 0;
+
+            this.IsWinner = true;
         }
     }
 }
