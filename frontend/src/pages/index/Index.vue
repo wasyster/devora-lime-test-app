@@ -40,7 +40,7 @@
     <template #footer>
       <div class="dialog-footer">
         <el-row>
-          <el-input-number v-model="numberOfHeros" :min="1" :max="100" />
+          <el-input-number v-model="numberOfHeros" :min="2" :max="100" />
         </el-row>
         <el-row justify="end">
           <el-button @click="state.dialogVisible = false">Cancel</el-button>
