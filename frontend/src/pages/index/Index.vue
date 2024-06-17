@@ -71,11 +71,11 @@ import { httpClient } from '../../infrastructure/httpClient';
 const router = useRouter();
 const state = reactive({});
 const fightLogs = reactive({});
-let numberOfHeros = ref(1);
+let numberOfHeros = ref(2);
 
 const onAddNewArena = async () => {
   const body = {
-    numberOfHeros: numberOfHeros?.value ?? 1
+    numberOfHeros: numberOfHeros?.value ?? 2
   }
   const response = await httpClient.postAsync('api/hero/add', body, false, true);
 
@@ -88,7 +88,7 @@ const onAddNewArena = async () => {
     });
 
     state.dialogVisible = !state.dialogVisible;
-    numberOfHeros = ref(1);
+    numberOfHeros = ref(2);
     await loadData();
   }
   else {
